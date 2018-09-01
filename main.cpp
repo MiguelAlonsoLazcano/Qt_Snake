@@ -3,6 +3,9 @@
 #include <QMainWindow>
 #include <QLabel>
 #include <QString>
+#include <Constants.h>
+
+
 
 int main(int argc, char* argv[]) {
     /*
@@ -13,7 +16,8 @@ int main(int argc, char* argv[]) {
     QLabel *label = new QLabel(&window);
     QString qt_version = "Qt version: ";
     qt_version.append(QT_VERSION_STR);
-    window.resize(300,300);
+    window.resize(B_HIGHT,B_WIDTH);
+
     window.setWindowTitle("Qt Snake");
     label->setText(qt_version);
     window.show();
