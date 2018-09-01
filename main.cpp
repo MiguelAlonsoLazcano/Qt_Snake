@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
     QLabel *label = new QLabel(&window);
     QString qt_version = "Qt version: ";
     qt_version.append(QT_VERSION_STR);
-    window.resize(B_HIGHT,B_WIDTH);
+    window.resize(B_WIDTH,B_HIGHT);
 
     window.setWindowTitle("Qt Snake");
     label->setText(qt_version);
